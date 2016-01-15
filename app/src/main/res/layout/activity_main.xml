@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="feng.lineview_custom_demo.MainActivity"
+    android:background="@android:color/black"
+    >
+
+    <feng.lineview_custom_demo.LineView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:lineview_text="本次行程:"
+        app:lineview_unit= "km"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/lineview_one"
+        />
+
+    <feng.lineview_custom_demo.LineView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/lineview_two"
+        android:layout_marginTop="20dp"
+        app:lineview_text="用时:"
+        app:lineview_unit= "H"
+        />
+    <feng.lineview_custom_demo.LineView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/lineview_three"
+        app:lineview_text="还有不完善的地方"
+        app:lineview_unit= "慢慢成长"
+        />
+
+    <feng.lineview_custom_demo.LineView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/lineview_for"
+        app:lineview_text="练习："
+        app:lineview_unit= "/100"
+        />
+</LinearLayout>
